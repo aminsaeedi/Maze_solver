@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hoosh_pr/maz_array.dart';
 
 import 'knowingly.dart';
+import 'm-coloring/prersent.dart';
 import 'unknowingly.dart';
 
 void main() {
@@ -26,10 +27,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  const MyHomePage(),
+      home:  const Coloring(),
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
    const MyHomePage({super.key, });
@@ -180,6 +182,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
               const  SizedBox(height: 30,),
+
               ToggleButtons(
                 isSelected:  [0 == chosai, 1 == chosai, 2== chosai,3== chosai,4==chosai],
                 onPressed: _onToggle2,

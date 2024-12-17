@@ -38,7 +38,6 @@ class AStar{
       // پیدا کردن گره با کمترین f
       Node? current = openList.reduce((a, b) => a.f < b.f ? a : b);
       cheakednode++;
-      print("ddd22222");
 
       // اگر به هدف رسیدیم
       if (current.x == goal.x && current.y == goal.y) {
@@ -53,6 +52,7 @@ class AStar{
       }
 
 
+
       openList.remove(current);
       closedList.add('${current.x},${current.y}');
 
@@ -63,6 +63,7 @@ class AStar{
         [0, -1], // چپ
         [-1, 0]  // بالا
       ];
+
 
       for (var direction in directions) {
         int newX = current.x + direction[0];

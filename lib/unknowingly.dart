@@ -152,53 +152,7 @@ class Dfs{
 
 
   }
-// List<Point> dfs() {
-//   List<List<bool>> visited = List.generate(41, (_) => List.filled(41, false));
-//   List<Point> path = [];
-//   Stack<Point> stack = Stack<Point>();
-//
-//   // شروع از نقطه (0, 0)
-//   stack.push(Point(0, 0));
-//   visited[0][0] = true;
-//
-//   // جهت‌های حرکت (پایین، راست، بالا، چپ)
-//   List<Point> directions = [
-//     Point(1, 0), // پایین
-//     Point(0, 1), // راست
-//     Point(-1, 0), // بالا
-//     Point(0, -1), // چپ
-//   ];
-//
-//   while (!stack.isEmpty) {
-//     Point current = stack.pop();
-//     path.add(current);
-//
-//     // بررسی اگر به نقطه پایان رسیدیم
-//     if (current.x == maze.length - 1 && current.y == maze[0].length - 1) {
-//       return path; // مسیر پیدا شد
-//     }
-//
-//     // بررسی همسایگان
-//     int havedeep=0;
-//     for (var direction in directions) {
-//       int newX = current.x + direction.x;
-//       int newY = current.y + direction.y;
-//
-//       if (isValidMove(maze, newX, newY, visited)) {
-//         havedeep++;
-//         stack.push(Point(newX, newY));
-//         visited[newX][newY] = true;// علامت‌گذاری به عنوان بازدید شده
-//       }
-//     }
-//
-//     if(havedeep == 0){
-//       path.clear();
-//
-//     }
-//   }
-//
-//   return []; // اگر مسیری پیدا نشد
-// }
+
 
 
 
