@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hoosh_pr/maz_array.dart';
-import 'package:hoosh_pr/xoplay/playgmame.dart';
+import 'package:hoosh_pr/xoplay/playgame.dart';
 
 import 'knowingly.dart';
 import 'm-coloring/prersent.dart';
