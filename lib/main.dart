@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hoosh_pr/maz_array.dart';
+import 'package:hoosh_pr/xoplay/playgmame.dart';
 
 import 'knowingly.dart';
 import 'm-coloring/prersent.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  const Coloring(),
+      home:  const Play(),
     );
   }
 }
